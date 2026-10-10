@@ -1,0 +1,16 @@
+{
+  "schema": "gibwork-evidence/v1",
+  "source": "synthetic-fixture-not-live",
+  "capturedAt": "2026-10-10T21:34:41.789Z",
+  "task": {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "title": "Synthetic Gibwork evidence demonstration",
+    "content": "Provide source, setup instructions, and attend two sessions.",
+    "isOpen": true,
+    "deadline": null,
+    "asset": null,
+    "allowOnlyVerifiedSubmissions": null,
+    "minSubmissionAmount": null
+  },
+  "scopeSha256": "e9dae58c467422db3753d6d3d57b3c8f994dcf7fbc64e2c86c27530ae2ed2474"
+}

@@ -1,0 +1,1 @@
+{"name":"gibwork-evidence-ledger","version":"0.1.0","private":true,"type":"module","description":"Requirement-to-artifact evidence reports for Gibwork contributors","engines":{"node":">=24"},"scripts":{"test":"node --test","demo":"node cli.mjs check examples/manifest.json --out demo-output"},"dependencies":{"@gibwork/cli":"0.2.4"}}
