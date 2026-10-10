@@ -18,6 +18,12 @@ npm run demo
 
 The demo writes a NEW demo-output directory with report.json and report.md. It uses a clearly labeled synthetic task, not a live authenticated lookup. Existing output directories are never overwritten: on subsequent runs choose another directory, e.g. `node cli.mjs check examples/manifest.json --out demo-output-2`.
 
+Watch the [silent, rendered CLI demo](media/demo.mp4), generated from commands actually executed against the synthetic fixture. It is not a live API recording or a screen capture. For a local rebuild, install Pillow and imageio-ffmpeg separately, then run `python record-demo.py` after removing or renaming the existing video; the script refuses to overwrite it. Media tooling is not needed to run Evidence Ledger.
+
+[Demo report screenshot](media/screenshot.png) · [Submission draft and remaining checks](SUBMISSION.md)
+
+Example output: `readme` and `code` report `FILES_PRESENT`; `attendance` and `originality` report `HUMAN_CHECK_REQUIRED`; the overall gate is `HUMAN_REVIEW_REQUIRED`. See the video and generated `demo-output/report.md` for file hashes and the full notice.
+
 ## Official Gibwork CLI integration
 
 The runtime dependency is @gibwork/cli 0.2.4 (bundles SDK 0.2.0). Live capture invokes its real `--json --environment production task get` command without a shell. It is core to fetching the full bounty terms; no scraped page or replacement API is used by the capture command.
@@ -58,7 +64,7 @@ Set currentSnapshot in the manifest to current.json to block on changed terms. W
 
 ## Hackathon status
 
-Prototype and automated tests completed. Session participation is pending; the user reports receiving the Hackathon role. Live authenticated integration, demo recording and final organizer-channel requirements are still pending. No bounty submission or payout has occurred. No private keys accessed, no signing or payments performed during this build.
+Prototype and automated tests completed. Session participation is pending; the user reports receiving the Hackathon role. A rendered demo of real offline CLI execution is included, but live wallet-authenticated integration and organizer-channel requirements are still pending. No bounty submission or payout has occurred. No private keys accessed, no signing or payments performed during this build.
 
 ## Originality review
 
