@@ -22,6 +22,8 @@ Watch the [silent, rendered CLI demo](media/demo.mp4), generated from commands a
 
 [Demo report screenshot](media/screenshot.png) · [Submission draft and remaining checks](SUBMISSION.md)
 
+[Example exported report](examples/report.md) (synthetic fixture, abbreviated for reading). To generate the complete JSON and Markdown artifacts, use `npm run demo` in a fresh checkout.
+
 Example output: `readme` and `code` report `FILES_PRESENT`; `attendance` and `originality` report `HUMAN_CHECK_REQUIRED`; the overall gate is `HUMAN_REVIEW_REQUIRED`. See the video and generated `demo-output/report.md` for file hashes and the full notice.
 
 ## Official Gibwork CLI integration

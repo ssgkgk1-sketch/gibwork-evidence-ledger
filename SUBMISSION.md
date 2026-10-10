@@ -9,6 +9,7 @@ Gibwork Evidence Ledger — a non-web terminal workflow that maps bounty require
 - Source and setup: https://github.com/ssgkgk1-sketch/gibwork-evidence-ledger
 - Short rendered CLI demo (synthetic fixture, actual local command execution): https://github.com/ssgkgk1-sketch/gibwork-evidence-ledger/blob/main/media/demo.mp4
 - Screenshot: https://github.com/ssgkgk1-sketch/gibwork-evidence-ledger/blob/main/media/screenshot.png
+- Exported example report: https://github.com/ssgkgk1-sketch/gibwork-evidence-ledger/blob/main/examples/report.md
 
 ## Working flow
 
@@ -23,7 +24,7 @@ Gibwork Evidence Ledger — a non-web terminal workflow that maps bounty require
 - The published demo is a rendered walkthrough of actual offline CLI commands on a synthetic fixture. It is **not** a live Gibwork API demo.
 - The official CLI adapter has passed a mocked subprocess test but has **not** completed a live authenticated task lookup. It requires a user-controlled wallet profile. Do not use a valuable wallet or share a seed/private key with an agent.
 - Attendance at **two real Discord hackathon sessions** has not been verified. The Discord role alone is insufficient.
-- Check the current organizer instructions and whether the Gibwork submission action requires payment/credits or a signature before submitting. Never assert reward or acceptance in advance.
+- The official listing currently states `creditCostPerSubmission: 1`. Inspect the exact wallet prompt and any costs before submitting. Never assert reward or acceptance in advance.
 
 ## Final submission text (use only after the checks above)
 
