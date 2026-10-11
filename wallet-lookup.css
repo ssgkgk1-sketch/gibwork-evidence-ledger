@@ -1,0 +1,7 @@
+body{font:16px/1.5 system-ui;background:#101820;color:#eef7f3;max-width:700px;margin:5vh auto;padding:20px}
+main{background:#1b2a31;border:1px solid #456;padding:28px;border-radius:18px}
+button{background:#b7ed9c;color:#102015;border:0;border-radius:10px;padding:12px 20px;font-weight:700;cursor:pointer}
+button:disabled{opacity:.45;cursor:not-allowed}
+code{overflow-wrap:anywhere}
+#status{white-space:pre-wrap;background:#101820;border-radius:10px;padding:18px}
+small{color:#b8cccf}

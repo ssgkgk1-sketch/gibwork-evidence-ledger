@@ -34,7 +34,13 @@ The runtime dependency is @gibwork/cli 0.2.4 (bundles SDK 0.2.0). Live capture i
 node cli.mjs capture TASK_UUID baseline.json EXISTING_PROFILE
 ```
 
-The official CLI requires wallet authentication even for free read requests. Configure an existing profile separately according to the official CLI documentation. This repository provides no wallet generation, key-import or payment instructions. Do not use a valuable wallet for development. We have NOT run an authenticated capture for this project yet. The adapter test substitutes only the subprocess response and does not prove a live server call.
+The official CLI requires wallet authentication even for free read requests. Configure an existing profile separately according to the official CLI documentation. This repository provides no wallet generation, key-import or payment instructions. Do not use a valuable wallet for development. The CLI adapter test substitutes only the subprocess response and does not prove a live CLI call. A separate official-SDK read-only task lookup succeeded on 2026-10-11; do not conflate that with CLI verification.
+
+### Browser-wallet read-only verification (no key export)
+
+For an OKX Solana extension wallet, run `node wallet-lookup.mjs TASK_UUID EXPECTED_SOLANA_ADDRESS` and open the printed loopback URL in the browser that has the OKX extension. This separate development helper uses the official SDK's `tasks.get` with a message-signing wallet adapter. It rejects transaction signing, checks the exact wallet address, and writes a new `captures/*.json` snapshot only after a successful live response. It does not configure the CLI, create a wallet, submit work, or prove Discord attendance. Do not share private keys or seed phrases, and reject any wallet prompt that asks for a transaction or token approval. `captures/` is deliberately local-only.
+
+On Windows, if Node reports a certificate-chain verification failure while browsers work, rerun the helper as `node --use-system-ca wallet-lookup.mjs TASK_UUID EXPECTED_SOLANA_ADDRESS`. This retains TLS verification while including the Windows trust store; do not disable certificate verification.
 
 If you already exported official CLI output, import it explicitly:
 
@@ -66,7 +72,7 @@ Set currentSnapshot in the manifest to current.json to block on changed terms. W
 
 ## Hackathon status
 
-Prototype and automated tests completed. Session participation is pending; the user reports receiving the Hackathon role. A rendered demo of real offline CLI execution is included, but live wallet-authenticated integration and organizer-channel requirements are still pending. No bounty submission or payout has occurred. No private keys accessed, no signing or payments performed during this build.
+Prototype and automated tests completed. Session participation is pending; the user reports receiving the Hackathon role. A rendered demo of real offline CLI execution is included. On 2026-10-11 a user-controlled OKX wallet signed a read-only message and the official Gibwork SDK returned the live bounty details. The CLI adapter itself has not been live-verified, and the published demo remains synthetic. No bounty submission or payout has occurred. No private keys were accessed by this project; no transaction signing or payment occurred.
 
 ## Originality review
 

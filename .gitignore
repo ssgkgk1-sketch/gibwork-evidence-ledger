@@ -1,3 +1,4 @@
+captures/
 node_modules/
 .env*
 demo-output/

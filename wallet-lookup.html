@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="session-token" content="__TOKEN__">
+<meta name="expected-address" content="__ADDRESS__">
+<meta name="task-id" content="__TASK_ID__">
+<title>Gibwork 읽기 전용 확인</title>
+<link rel="stylesheet" href="/wallet-lookup.css">
+<main>
+<h1>Gibwork 작업 조회</h1>
+<p>이 페이지는 이 컴퓨터에서만 열립니다. OKX 지갑의 <strong>메시지 서명</strong>으로 작업을 한 번 조회합니다. 송금·거래·토큰 승인 서명은 요청하지 않습니다.</p>
+<p>기대 지갑: <code>__ADDRESS__</code><br>작업 ID: <code>__TASK_ID__</code></p>
+<p><strong>지갑 창에 거래나 승인 요청이 보이면 즉시 거절하세요.</strong> 개인키와 시드문구는 입력하지 마세요.</p>
+<button id="start">OKX 연결 후 읽기 전용 조회</button>
+<p id="status" role="status">대기 중</p>
+<small>조회 성공 시 공개 작업 내용의 검증용 스냅샷만 로컬 captures 폴더에 저장합니다.</small>
+</main>
+<script src="/wallet-lookup-client.js" defer></script>
+</html>
