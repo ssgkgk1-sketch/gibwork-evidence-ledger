@@ -1,0 +1,10 @@
+{
+  "projectRoot": "..",
+  "snapshot": "live-snapshot.json",
+  "requirements": [
+    {"id":"terminal-tool","description":"Runnable terminal workflow and Gibwork integration","kind":"files","paths":["cli.mjs","ledger.mjs","capture.mjs","wallet-lookup.mjs"]},
+    {"id":"readme","description":"Setup and usage documentation","kind":"files","paths":["README.md"]},
+    {"id":"attendance","description":"Attend at least two Discord hackathon sessions","kind":"human","note":"Do not mark complete without actual attendance."},
+    {"id":"quality","description":"Originality and usefulness require organizer review","kind":"human"}
+  ]
+}

@@ -18,11 +18,21 @@ npm run demo
 
 The demo writes a NEW demo-output directory with report.json and report.md. It uses a clearly labeled synthetic task, not a live authenticated lookup. Existing output directories are never overwritten: on subsequent runs choose another directory, e.g. `node cli.mjs check examples/manifest.json --out demo-output-2`.
 
-Watch the [silent, rendered CLI demo](media/demo.mp4), generated from commands actually executed against the synthetic fixture. It is not a live API recording or a screen capture. For a local rebuild, install Pillow and imageio-ffmpeg separately, then run `python record-demo.py` after removing or renaming the existing video; the script refuses to overwrite it. Media tooling is not needed to run Evidence Ledger.
+Watch the [live-sourced workflow demo](media/live-demo.mp4): it was rendered from actual CLI test and report commands using a task snapshot returned by the official Gibwork SDK after user-controlled wallet message signing on 2026-10-11. It is not a screen recording of the wallet prompt or a live CLI-to-server call. The earlier [synthetic fixture demo](media/demo.mp4) remains for comparison. Media tooling is not needed to run Evidence Ledger; `record-live-demo.py` and `record-demo.py` reproduce the videos with Pillow and imageio-ffmpeg and refuse to overwrite existing output.
 
-[Demo report screenshot](media/screenshot.png) · [Submission draft and remaining checks](SUBMISSION.md)
+[Live-sourced report screenshot](media/live-screenshot.png) · [Submission draft and remaining checks](SUBMISSION.md)
 
 [Example exported report](examples/report.md) (synthetic fixture, abbreviated for reading). To generate the complete JSON and Markdown artifacts, use `npm run demo` in a fresh checkout.
+
+The [live-sourced snapshot](examples/live-snapshot.json) contains public task details only, not a wallet address or secret. Reproduce the real-task evidence report with:
+
+```sh
+node cli.mjs check examples/live-manifest.json --out live-report-001
+```
+
+The command checks local files against the saved official-SDK response. It does not contact Gibwork again or repeat a wallet signature. The output retains human checks for Discord attendance and organizer review.
+
+[Live-sourced exported report](examples/live-report.md) is one generated output from this command. Its file hashes reflect the repository state when the report was created; rerun the command after modifying files.
 
 Example output: `readme` and `code` report `FILES_PRESENT`; `attendance` and `originality` report `HUMAN_CHECK_REQUIRED`; the overall gate is `HUMAN_REVIEW_REQUIRED`. See the video and generated `demo-output/report.md` for file hashes and the full notice.
 
@@ -72,7 +82,7 @@ Set currentSnapshot in the manifest to current.json to block on changed terms. W
 
 ## Hackathon status
 
-Prototype and automated tests completed. Session participation is pending; the user reports receiving the Hackathon role. A rendered demo of real offline CLI execution is included. On 2026-10-11 a user-controlled OKX wallet signed a read-only message and the official Gibwork SDK returned the live bounty details. The CLI adapter itself has not been live-verified, and the published demo remains synthetic. No bounty submission or payout has occurred. No private keys were accessed by this project; no transaction signing or payment occurred.
+Prototype and automated tests completed. Session participation is pending; the user reports receiving the Hackathon role. On 2026-10-11 a user-controlled OKX wallet signed a read-only message and the official Gibwork SDK returned the live bounty details. A new rendered demo executes the CLI evidence checker on that live-sourced snapshot; it does not replay wallet signing. The CLI adapter itself has not been live-verified. No bounty submission or payout has occurred. No private keys were accessed by this project; no transaction signing or payment occurred.
 
 ## Originality review
 

@@ -1,0 +1,24 @@
+{
+  "schema": "gibwork-evidence/v1",
+  "source": "official-sdk-live-wallet-message",
+  "capturedAt": "2026-10-11T04:51:22.725Z",
+  "task": {
+    "id": "1052f22d-3f87-4b1d-b0d7-71a60679e7fa",
+    "title": "Gibwork Developer Hackathon Bounty",
+    "content": "<p><strong>Join this Gibwork Developer Hackathon bounty</strong> to create a new non-web-app use case for Gibwork using the <strong>SDK, CLI, or MCP</strong>. <br /><br />This bounty is focused on practical developer workflows, automations, integrations, or tooling that demonstrate a compelling way Gibwork can be used outside of traditional web applications.</p><h3>Bounty Description</h3><p>The selected participants will be responsible for:</p><ul><li><p>Designing and building a <strong>new Gibwork bounty use case</strong> that uses the SDK, CLI, or MCP in a meaningful and functional way.</p></li><li><p>Focusing this bounty on <strong>non-web-app development</strong>, such as developer tooling, automation flows, terminal-based utilities, AI agent integrations, backend workflows, local productivity tools, or other creative bounty concepts.</p></li><li><p>Implementing a working prototype that clearly shows how the bounty use case works, what problem it solves, and how Gibwork is integrated.</p></li><li><p>Documenting the bounty solution so another developer can understand the setup, usage flow, and expected output.</p></li><li><p>Providing a short demo of the completed bounty build, including the core workflow and successful execution.</p></li></ul><h3>Requirements</h3><ul><li><p>The bounty must use <strong>Gibwork SDK, CLI, or MCP</strong> as a core part of the implementation.</p></li><li><p>The bounty must be a <strong>new use case</strong>, not a minor variation of an existing demo.</p></li><li><p>The bounty must <strong>not</strong> be a web app, frontend dashboard, or browser-based product.</p></li><li><p>The bounty should solve a real developer, operations, automation, research, or workflow problem with a clear practical outcome.</p></li><li><p>The bounty submission must include clear setup instructions, dependencies, and steps to run or test the project.</p></li><li><p>The submission should be functional, organized, and understandable enough for basic reviewer validation.</p></li><li><p>Must attend at least 2 of the hackathon sessions on Discord.</p></li></ul><h3>What to Submit</h3><ul><li><p>A public GitHub repository URL for the completed bounty project, including all source code and a README.</p></li><li><p>A short written summary in the repository README or shared document explaining the bounty use case, why it is valuable, and which Gibwork toolset was used (SDK, CLI, or MCP).</p></li><li><p>Setup and usage instructions for the bounty project, including installation steps, environment variables, commands to run, and sample input/output.</p></li><li><p>A screen recording or demo video URL showing the bounty workflow from setup or execution through successful output.</p></li><li><p>Screenshots of the bounty project running, such as terminal output, logs, agent interactions, or generated results.</p></li><li><p>Any exported deliverables produced by the bounty project, such as output files, reports, generated artifacts, or shared document links, if applicable.</p></li></ul><h3>How to start</h3><ul><li><p>Submit to the Google form <a target=\"_blank\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSejpks7hItR6zBUXpdrwgUDrwvEcmnJj6nlFbUXKIyNkVVfag/viewform?usp=dialog\">https://docs.google.com/forms/d/e/1FAIpQLSejpks7hItR6zBUXpdrwgUDrwvEcmnJj6nlFbUXKIyNkVVfag/viewform?usp=dialog</a></p></li><li><p>Check Discord (<a target=\"_blank\" href=\"https://discord.gg/2577tTsRt\">https://discord.gg/2577tTsRt</a>) to see if you have been rewarded the Hackathon role.</p></li><li><p>Once rewarded the Discord role you can start the work.</p></li></ul>",
+    "isOpen": true,
+    "deadline": "2026-10-30T04:00:00.000Z",
+    "asset": {
+      "id": "18c15237-6d50-4602-aee6-0f277e1362af",
+      "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "symbol": "USDC",
+      "imageUrl": "https://cdn.gib.work/token-images/usdc.png",
+      "amount": "1000000000",
+      "price": 1000,
+      "decimals": 6
+    },
+    "allowOnlyVerifiedSubmissions": false,
+    "minSubmissionAmount": 50
+  },
+  "scopeSha256": "ce53182158000b9e6e38ccafc4f90896982c4ff2eef1befb037786ea6493c56b"
+}
