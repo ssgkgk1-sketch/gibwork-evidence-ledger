@@ -21,13 +21,15 @@ Gibwork Evidence Ledger — a non-web terminal workflow that maps bounty require
 4. Run `node cli.mjs check examples/manifest.json --out NEW_REPORT_DIR` to produce JSON and Markdown reports.
 5. Compare two snapshots with `node cli.mjs diff BASELINE CURRENT`; changed task terms block the gate.
 
-## Honest limitations — verify before final submission
+## Submission status and honest limitations
 
+- Submitted through the Gibwork website on 2026-10-12; the submission currently shows `In Review`. This does not establish eligibility or payment.
 - The new live-sourced demo renders actual local CLI commands run against a saved SDK-authenticated task snapshot. It is **not** a screen recording of wallet signing or a live CLI-to-Gibwork lookup. The older video remains explicitly synthetic.
 - The official CLI adapter has passed a mocked subprocess test but has **not** completed a live authenticated task lookup. The official SDK did successfully return this bounty on 2026-10-11 using a user-controlled browser-wallet message signature. Do not use a valuable wallet or share a seed/private key with an agent.
+- A direct official CLI production `task get` attempt on 2026-10-12 returned `CREDENTIAL_ERROR`: no CLI wallet profile is configured. This is an authentication prerequisite, not evidence that the Gibwork server or CLI lookup succeeded.
 - Attendance at **two real Discord hackathon sessions** has not been verified. The Discord role alone is insufficient.
-- The official listing currently states `creditCostPerSubmission: 1`. Inspect the exact wallet prompt and any costs before submitting. Never assert reward or acceptance in advance.
+- The official listing showed `creditCostPerSubmission: 1` before submission. The account page shows only Discord connected; the site warns that fewer than two connected accounts can affect payout through penalty fees. The exact fee rate has not been verified. Never assert reward or acceptance in advance.
 
-## Final submission text (use only after the checks above)
+## Earlier submission draft (not proof of completed attendance)
 
-Built Gibwork Evidence Ledger, a terminal-first submission-readiness workflow that supports official Gibwork CLI snapshots and a separate SDK-authenticated read-only lookup. It maps requirements to file hashes, detects changed bounty terms, and explicitly separates mechanical checks from human-only requirements. Source, setup, tests, live-sourced workflow demo and screenshot are linked above. I attended the required two Discord sessions [replace with real dates only after attending]. The SDK task lookup was verified on 2026-10-11 for task 1052f22d-3f87-4b1d-b0d7-71a60679e7fa; the CLI adapter has not been live-verified.
+Built Gibwork Evidence Ledger, a terminal-first submission-readiness workflow that supports official Gibwork CLI snapshots and a separate SDK-authenticated read-only lookup. It maps requirements to file hashes, detects changed bounty terms, and explicitly separates mechanical checks from human-only requirements. Source, setup, tests, live-sourced workflow demo and screenshot are linked above. The required two Discord sessions have not yet been attended; whether attendance after submission preserves eligibility remains unanswered by the organizer. The SDK task lookup was verified on 2026-10-11 for task 1052f22d-3f87-4b1d-b0d7-71a60679e7fa; the CLI adapter has not been live-verified.

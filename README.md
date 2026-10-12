@@ -82,7 +82,7 @@ Set currentSnapshot in the manifest to current.json to block on changed terms. W
 
 ## Hackathon status
 
-Prototype and automated tests completed. Session participation is pending; the user reports receiving the Hackathon role. On 2026-10-11 a user-controlled OKX wallet signed a read-only message and the official Gibwork SDK returned the live bounty details. A new rendered demo executes the CLI evidence checker on that live-sourced snapshot; it does not replay wallet signing. The CLI adapter itself has not been live-verified. No bounty submission or payout has occurred. No private keys were accessed by this project; no transaction signing or payment occurred.
+Prototype and automated tests completed. The project was submitted on Gibwork on 2026-10-12 and is in review; this is not an award or payout. Session participation is pending; the user reports receiving the Hackathon role. On 2026-10-11 a user-controlled OKX wallet signed a read-only message and the official Gibwork SDK returned the live bounty details. A rendered demo executes the CLI evidence checker on that live-sourced snapshot; it does not replay wallet signing. The official CLI adapter itself has not been live-verified: a direct production `task get` attempt on 2026-10-12 stopped with `CREDENTIAL_ERROR` because no CLI wallet profile is configured. No private keys were accessed by this project; no transaction signing or payment occurred during the lookup.
 
 ## Originality review
 
