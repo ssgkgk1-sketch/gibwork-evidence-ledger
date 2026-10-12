@@ -43,4 +43,4 @@ Organizer confirmation or actual attendance is required.
 
 Scope changes: none
 
-File existence and hashes do not prove quality, attendance, originality, eligibility, or payout. No submission or payment has been made.
+File existence and hashes do not prove quality, attendance, originality, eligibility, or payout. This report does not verify submission or payment status.

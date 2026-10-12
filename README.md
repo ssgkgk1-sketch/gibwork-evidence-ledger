@@ -84,6 +84,8 @@ Set currentSnapshot in the manifest to current.json to block on changed terms. W
 
 Prototype and automated tests completed. The project was submitted on Gibwork on 2026-10-12 and is in review; this is not an award or payout. Session participation is pending; the user reports receiving the Hackathon role. On 2026-10-11 a user-controlled OKX wallet signed a read-only message and the official Gibwork SDK returned the live bounty details. A rendered demo executes the CLI evidence checker on that live-sourced snapshot; it does not replay wallet signing. The official CLI adapter itself has not been live-verified: a direct production `task get` attempt on 2026-10-12 stopped with `CREDENTIAL_ERROR` because no CLI wallet profile is configured. No private keys were accessed by this project; no transaction signing or payment occurred during the lookup.
 
+On 2026-10-12, all 16 tests passed and a fresh report from the saved SDK-authenticated snapshot returned `HUMAN_REVIEW_REQUIRED` (files present; attendance and quality remain human checks). An `npm audit --omit=dev` check found no high or critical advisories but reported six moderate advisories in transitive `@solana/web3.js` dependencies (`stream-json` and `uuid`). They are not claimed fixed; avoid treating third-party task data as trusted, and review upstream dependency updates before using this tool as a long-running service.
+
 ## Originality review
 
 Existing Gibwork DevOps Kit and Bounty Autopilot projects cover discovery/scaffolding/submission. This proposal focuses on requirement-to-file evidence, scope drift and review packets. The public search was limited; organizer acceptance of originality is not guaranteed.
